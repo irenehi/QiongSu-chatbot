@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: QiongSu-chatbot
+  host: QiongSu-chatbot
+  disk_quota: 1024M
+  services:
+  - Conversation-z7
+  - Speech to Text-v7
+  - Text to Speech-se
